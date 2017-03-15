@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 
 export class SearchBar extends Component {
@@ -10,8 +9,6 @@ export class SearchBar extends Component {
   }
 
   render() {
-    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
-
     return (
       <div className="search-bar">
         <input 

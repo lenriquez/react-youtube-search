@@ -1,7 +1,7 @@
  import React from 'react';
 
  export const VideoListItem = ({video, onVideoSelect }) => {
-  const imageUrl = video.snippet.thumbnails.default.url;
+  const imageUrl = video.snippet.thumbnails.default.iurl;
 
   return (
     <li onClick={() => onVideoSelect(video)} className="list-group-item">
@@ -14,3 +14,4 @@
     </li>
   );
  };
+ 
